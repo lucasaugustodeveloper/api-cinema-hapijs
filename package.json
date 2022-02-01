@@ -1,0 +1,30 @@
+{
+  "name": "api-cinema-adonis-hapijs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Lucas Augusto D Silva <lucas.augusto5061@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/hapi": "^20.2.1",
+    "dotenv": "^10.0.0",
+    "filter-files": "^0.4.0",
+    "hapi-auth-jwt2": "^10.2.0",
+    "is-directory": "^0.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.95.15",
+    "pg": "^8.7.1"
+  },
+  "devDependencies": {
+    "faker": "^6.6.6",
+    "nodemon": "^2.0.15",
+    "rewire": "^6.0.0"
+  },
+  "scripts": {
+    "dev": "nodemon server",
+    "knex:migrate:make": "knex migrate:make",
+    "knex:seed:make": "knex seed:make",
+    "knex:migrate": "knex migrate:latest",
+    "knex:rollback": "knex migrate:rollback",
+    "knex:seed": "knex seed:run"
+  }
+}
